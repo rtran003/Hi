@@ -1,0 +1,17 @@
+FROM ubuntu 
+
+#RUN mkdir /bin
+
+COPY assignment.sh /bin/
+
+RUN  chmod +x assingment1.sh
+
+RUN chmod +rwx -R /bin
+
+RUN /bin/assignment1.sh
+
+RUN apt update
+
+RUN install nginx
+
+RUN service service ngnix start
